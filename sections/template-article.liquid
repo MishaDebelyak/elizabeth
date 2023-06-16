@@ -119,6 +119,7 @@
             <div class="text-sm font-medium ml-3">Comment is posted successfully</div>
           </div>
         {% endif %}
+
         <div class="px-1 md:flex mb-3">
           <div class="px-3 md:w-1/2">
             <label for="comment_author" class="text-gray-700 font-medium uppercase text-xs mb-2">Name</label>
@@ -168,8 +169,8 @@
 <script type="application/ld+json">
   {
   "@context": "http://schema.org",
-                "@type": "BlogPosting",
-                "headline": {{ article.title | json }},
+                  "@type": "BlogPosting",
+                  "headline": {{ article.title | json }},
   "articleBody": {{ article.content | strip_html | json }},
   {% if article.excerpt != blank %}
     "description": {{ article.excerpt | strip_html | json }},
@@ -182,12 +183,12 @@
   "datePublished": {{ article.published_at | date: format: "default" | json }},
   "dateCreated": {{ article.created_at | date: format: "default" | json }},
   "author": {
-                  "@type": "Person",
-                  "name": {{ article.author | json }}
+                    "@type": "Person",
+                    "name": {{ article.author | json }}
   },
   "publisher": {
-                  "@type": "Organization",
-                  "name": {{ shop.name | json }}
+                    "@type": "Organization",
+                    "name": {{ shop.name | json }}
   }
   }
 </script>

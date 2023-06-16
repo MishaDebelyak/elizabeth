@@ -27,6 +27,7 @@
     "96c74274-3b65-44b5-8be6-039facca8940": {
       "type": "contact-form",
       "settings": {
+        "title": "Contact us"
       }
     }
   },

@@ -1,11 +1,33 @@
 {
-    "sections": {
-        "featured-collection": {
-            "type": "featured-collection",
-            "settings": {
-                "featured_collection": "all"
-            }
-        }
+  "sections": {
+    "featured-collection": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Featured Collection",
+        "featured_collection": "all",
+        "number_of_products_to_show": 4
+      }
     },
-    "order": ["featured-collection"]
+    "5fec87bf-c6dc-4d46-a6da-4024b7aa2dce": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Featured Shoes",
+        "featured_collection": "",
+        "number_of_products_to_show": 4
+      }
+    },
+    "7d42f119-ee05-4a71-8d01-2b0c79b5ccfb": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Featured shirts",
+        "featured_collection": "",
+        "number_of_products_to_show": 4
+      }
+    }
+  },
+  "order": [
+    "featured-collection",
+    "5fec87bf-c6dc-4d46-a6da-4024b7aa2dce",
+    "7d42f119-ee05-4a71-8d01-2b0c79b5ccfb"
+  ]
 }
